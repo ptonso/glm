@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supervised"
+version = "0.1.0"
+description = "Supervised machine learning tools."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Pedro Tonso" }]
+dependencies = [
+  "pandas>=1.5",
+  "numpy>=1.23",
+  "seaborn>=0.12",
+  "matplotlib>=3.6",
+]
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["supervised", "supervised.*"]
